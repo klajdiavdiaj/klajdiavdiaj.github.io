@@ -6,7 +6,7 @@ background-position: center;
 font-family: monospace;
 color: white;
 }
-h1{
+.hed{
   text-align: center;
   font-size: 30px;
 }
@@ -113,4 +113,9 @@ border-radius: 20px;
 .btn3:hover span:after {
   opacity: 1;
   right: 0;
+}
+.kl{
+  margin-top: 420px;
+  border: solid white;
+  max-width: 220px;
 }
