@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+* {box-sizing:border-box;}
+.header{
+text-align:center;
+padding:15px;
+background-color:#008060;
+color:white;
+font-family: 'Special Elite', cursive;
+}
+h2{
+color:#008060;
+font-family: 'Bree Serif', serif;
+}
+p{
+font-family: 'Arbutus Slab', serif;
+}
+
+.fa{
+color:#008060;
+}
+.left{
+width:35%;
+box-shadow: 5px 5px 2px grey;
+padding:10px;
+float:left;
+margin-bottom:10px;
+}
+
+a{
+text-decoration:none;
+color:black;
+}
+a:hover{
+color:red;
+}
+.center{
+float:left;
+width:65%;
+box-shadow: 5px 5px 2px grey;
+padding:10px;
+}
+
+.skill{
+text-align:right;
+}
+.cl{
+width:80%;
+background-color:#ff1a75;;
+animation:java 1s ease-out;
+border-radius:5px;
+}
+
+
+@keyframes cl{
+0% {width:0px;}
+100% {width:45%;}
+}
+.html{
+width:90%;
+background-color:red;
+border-radius:5px;
+ animation:html 1s ease-out;
+}
+
+@keyframes html{
+0% {width:0px;}
+100% {width:90%;}
+}
+.css{
+width:80%;
+background-color:tomato;
+border-radius:5px;
+animation:css 1s ease-out;
+}
+@keyframes css{
+0% {width:0px;}
+100% {width:85%;}
+}
+.javascript{
+width:60%;
+background-color:orange;
+animation:javascript 1s ease-out;
+border-radius:5px;
+}
+@keyframes javascript{
+0% {width:0px;}
+100% {width:60%;}
+}
+.java{
+width:50%;
+background-color:green;
+animation:java 1s ease-out;
+border-radius:5px;
+
+}
+@keyframes java{
+0% {width:0px;}
+100% {width:45%;}
+}
+
+.aftesi{
+width:65%;
+box-shadow: 5px 5px 2px grey;
+padding:10px;
+float:left;
+
+}
+.project{
+float:left;
+}
+.rev{
+width:65%;
+box-shadow: 5px 5px 2px grey;
+padding:10px;
+float:left;
+
+}
+
+#btn{
+padding:4px 15px;
+font-size:17px;
+text-align:center;
+cursor:pointer;
+outline:none;
+border-radius:10px;
+box-shadow: 0 3px lightgrey;
+color:white;
+}
+#button:active{
+transform:tranlateY(6px);
+}
+@media screen and (max-width:635px) {
+    .left {
+        width: 100%;
+    }
+    .center {
+        width: 100%;
+    } 
+    .aftesi {
+        width: 100%;
+    }
+     .end {
+        width: 100%;
+    }
+    .aftesi{
+    widht:100%;
+     flex-direction: column;
+    }
+}
+
+
+</style>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Bree+Serif|Lobster" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Arbutus+Slab" rel="stylesheet">
+<body>
+
+
+<div class="container">
+
+<div class="header">
+<h1>Curriculum Vitae</h1>
+</div>
+<div class="left">
+<h2><i class="fa fa-address-card-o" style="padding:4px;"></i>Klajdi Avdiaj</h2>
+<p><i class="fa fa-map-marker" style="padding:4px;"></i>Tirane</p>
+<p><i class="fa fa-birthday-cake"></i>06/07/1997</p>
+
+<p><i class="fa fa-envelope-o"></i>klajdiavdiaj6@gmail.com</p>
+<div id="pro">
+<h2><i class="fa fa-graduation-cap" style="padding:4px;"></i>Edukimi</h2>
+<p style="color:#008060;"><i class="fa fa-flag-o" style="padding:4px;"></i>2012-2015</p>
+<p>Gjimnazi i pergjithshem Cakran</p>
+<p style="color:#008060;"><i class="fa fa-flag-o" style="padding:4px;"></i>2015-2018</p>
+<a href="https://fshn.edu.al">Fakulteti i Shkencave Te Natyres</a>
+<p style="color:#008060;">Aktualisht</p>
+<p>Punonjes ne kompanine Trifid Networks pozicioni HelpDesk Support.</p>
+</div>
+
+<div id="show" style="display:none;">
+<h2><i class="fa fa-paperclip" style="padding:4px;"></i>Projekte</h2>
+<a href="https://klajdiavdiaj.github.io/"<i class="fa fa-cart-arrow-down" style="font-size:20px; padding:10px;"></i>Navigation Page</a>
+<a href="klajdi.avdiaj.github.io/ottergram"<i class="fa fa-camera-retro" style="font-size:20px; padding:10px;"></i>Ottergram</a>
+<a href="klajdi.avdiaj.github.io/news"<i class="fa fa-camera-retro" style="font-size:20px; padding:10px;"></i>Newspaper</a>
+<a href="klajdi.avdiaj.github.io/news"<i class="fa fa-camera-retro" style="font-size:20px; padding:10px;"></i>Entertainment</a>
+</div>
+
+<button id="btn" type="button" style="background-color:green;padding-left:" onclick="myFunction()">Me shume</button>
+</div>
+
+
+<div class="center">
+<h2><i class="fa fa-laptop" style="padding:4px;"></i>Programim</h2>
+<p>C Language</p>
+<div class="cont">
+<div class="skill cl">80%</div>
+</div>
+<p style="">HTML</p>
+<div class="cont">
+<div class="skill html">90%</div>
+</div>
+<p>CSS</p>
+<div class="cont">
+<div class="skill css">85%</div>
+</div>
+<p>Javascript</p>
+<div class="cont">
+<div class="skill javascript">60%</div>
+</div>
+<p>Java</p>
+<div class="cont">
+<div class="skill java">45%</div>
+</div>
+</div>
+
+<div class="aftesi">
+<h2><i class="fa fa-line-chart" style="padding:4px;"></i>Aftesi te tjera</h2>
+<ul class="aft">
+<li>Matlab-Mesatar</li>
+<li>SPSS-Mesatar</li>
+<li>R-Fillestar</li>
+<li>MS Excel-I avancuar</li>
+</ul>
+<h2><i class="fa fa-language" style="padding:10px;"></i>Gjuhet</h2>
+<ul class="aft">
+<li>Anglisht-Shume Mire</li>
+<li>Italisht-Mire</li>
+</ul>
+<h2><i class="fa fa-tachometer" style="padding:10px;"></i>Pershkrimi</h2>
+<p style="padding:10px;">Diplomuar prane Fakultetit te Shkencave te Natyres ne degen Inxhinieri Matematike dhe Informatike.Gjate viteve te studimit kam fituar aftesi te mira ne programim dhe analitike.I afte te kodoj ne gjuhe te ndryshme programimi si dhe te perdor ne menyre eficente programe statistikore.Aktualisht jam i punesuar prane kompanise Trifid Networks ne pozicionin HelpDesk.Kembengulja dhe vendosmeria jane tiparet qe pershkruajne menyren time te punes. Kur marr nje detyre persiper me pelqen ta coj deri ne fund dhe kjo eshte pika ime e forte.Kerkoj te perdor dhe zhvilloj me tej aftesite ne fushen e informatikes dhe matematikes, vecanerisht ne programim. 
+</div>
+
+
+</div>
+
+</div>
+<script>
+document.getElementById('demo')=Date();
+function myFunction() {
+var x = document.getElementById("show");
+if(x.style.display==="none"){
+x.style.display="block";
+
+document.getElementById("btn").innerHTML="Me pak";
+document.getElementById("btn").style.backgroundColor="red";
+}
+
+else
+{ x.style.display = "none";
+document.getElementById("btn").innerHTML="Me shume";
+document.getElementById("btn").style.backgroundColor="green";
+}
+}
+</script>
+</body>
+</head>
