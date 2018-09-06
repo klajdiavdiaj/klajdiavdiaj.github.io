@@ -120,3 +120,8 @@ border-radius: 20px;
   border: solid blank;
   max-width: 220px;
 }
+@media screen and (max-width:635px) {
+  .button{
+    width: 100%;
+  }
+}
