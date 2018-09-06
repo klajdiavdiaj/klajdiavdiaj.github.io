@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>CV</title>
+
 <style>
 * {box-sizing:border-box;}
 .header{
@@ -147,15 +146,40 @@ transform:tranlateY(6px);
         width: 100%;
     }
     .aftesi{
-    widht:100%;
-     flex-direction: column;
+    width:100%;
+
     }
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
 }
 
 
 </style>
 
 <head>
+  <title>CV</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Lobster" rel="stylesheet">
@@ -187,10 +211,10 @@ transform:tranlateY(6px);
 
 <div id="show" style="display:none;">
 <h2><i class="fa fa-paperclip" style="padding:4px;"></i>Projekte</h2>
-<a href="https://klajdiavdiaj.github.io/"<i class="fa fa-cart-arrow-down" style="font-size:20px; padding:10px;"></i>Navigation Page</a>
-<a href="klajdi.avdiaj.github.io/ottergram"<i class="fa fa-camera-retro" style="font-size:20px; padding:10px;"></i>Ottergram</a>
-<a href="klajdi.avdiaj.github.io/news"<i class="fa fa-camera-retro" style="font-size:20px; padding:10px;"></i>Newspaper</a>
-<a href="klajdi.avdiaj.github.io/news"<i class="fa fa-camera-retro" style="font-size:20px; padding:10px;"></i>Entertainment</a>
+<a href="https://klajdiavdiaj.github.io/"><i class="fa fa-cart-arrow-down" style="font-size:20px; padding:10px;"></i>Navigation Page</a>
+<a href="klajdi.avdiaj.github.io/ottergram"><i class="fa fa-camera-retro" style="font-size:20px; padding:10px;"></i>Ottergram</a>
+<a href="klajdi.avdiaj.github.io/news"><i class="fa fa-camera-retro" style="font-size:20px; padding:10px;"></i>Newspaper</a>
+<a href="klajdi.avdiaj.github.io/news"><i class="fa fa-camera-retro" style="font-size:20px; padding:10px;"></i>Entertainment</a>
 </div>
 
 <button id="btn" type="button" style="background-color:green;padding-left:" onclick="myFunction()">Me shume</button>
@@ -235,10 +259,29 @@ transform:tranlateY(6px);
 <li>Italisht-Mire</li>
 </ul>
 <h2><i class="fa fa-tachometer" style="padding:10px;"></i>Pershkrimi</h2>
-<p style="padding:10px;">Diplomuar prane Fakultetit te Shkencave te Natyres ne degen Inxhinieri Matematike dhe Informatike.Gjate viteve te studimit kam fituar aftesi te mira ne programim dhe analitike.I afte te kodoj ne gjuhe te ndryshme programimi si dhe te perdor ne menyre eficente programe statistikore.Aktualisht jam i punesuar prane kompanise Trifid Networks ne pozicionin HelpDesk.Kembengulja dhe vendosmeria jane tiparet qe pershkruajne menyren time te punes. Kur marr nje detyre persiper me pelqen ta coj deri ne fund dhe kjo eshte pika ime e forte.Kerkoj te perdor dhe zhvilloj me tej aftesite ne fushen e informatikes dhe matematikes, vecanerisht ne programim.
+<p style="padding:10px;">Diplomuar prane Fakultetit te Shkencave te Natyres ne degen Inxhinieri Matematike dhe Informatike.Gjate viteve te studimit kam fituar aftesi te mira ne programim dhe analitike.I afte te kodoj ne gjuhe te ndryshme programimi si dhe te perdor ne menyre eficente programe statistikore.Aktualisht jam i punesuar prane kompanise Trifid Networks ne pozicionin HelpDesk.Kembengulja dhe vendosmeria jane tiparet qe pershkruajne menyren time te punes. Kur marr nje detyre persiper me pelqen ta coj deri ne fund dhe kjo eshte pika ime e forte.Kerkoj te perdor dhe zhvilloj me tej aftesite ne fushen e informatikes dhe matematikes, vecanerisht ne programim.</p>
+<h3>Pershtypjet tuaja</h3>
+
+<div>
+  <form action="mailto:klajdiavdiaj6@gmail.com" method="post" enctype="text/plain">
+    <label for="fname">Emri</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Mbiemri</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+     <label for="email">e-mail</label>
+    <input type="text" id="email" name="email" placeholder="Your e-mail...">
+
+    <label for="country">Vendi</label>
+    <select id="country" name="country">
+      <option value="shqiperi">Shqiperi</option>
+      <option value="Kosove">Kosove</option>
+      <option value="Tjeter">Tjeter</option>
+    </select>
+
+    <input type="submit" value="Submit">
+  </form>
 </div>
-
-
 </div>
 
 </div>
@@ -262,3 +305,4 @@ document.getElementById("btn").style.backgroundColor="green";
 </script>
 </body>
 </head>
+</html>
