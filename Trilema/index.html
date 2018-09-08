@@ -1,207 +1,151 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0" >
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/bootstrap.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP|Open+Sans" rel="stylesheet">
+    <meta charset="utf-8">
+     <script src="jquery.min.js"></script>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP|Open+Sans" rel="stylesheet">
+    <title>Newspaper</title>
+  </head>
+  <style>
+  h1,p,h2{
+    font-family: 'Open Sans', sans-serif;
+font-family: 'Noto Serif JP', sans-serif;
+  }
+  .navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial scale=1">
-  <title>Trilema</title>
-  <link rel="stylesheet" href="css/style.css" type="text/css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<div class="container">
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+@media screen and (max-width: 800px) {
+  .navbar a {
+    width: 100%;
+  }
+  .col-md-6{
+    display: block;
+  }
+  .col-md-6{
+    display: block;
+  }
+}
+.btn{
+  position: sticky;
+  margin-left:45%;
+  margin-top: -100px;
+}
+
+</style>
 
   <body>
-    <header class="head">
-      <ul class="lista">
-        <li><a href="">BALLINA</a></li>
-        <li><a href="">ARTIKUJ</a></li>
-        <li><a href="">RRETH TRILEMA</a></li>
-        <li><a href="">PËRROI PSIQIK</a></li>
-        <li><a href="">KONTAKT</a></li>
-      </ul>
-      <div>
-
-        <h1>TRILEMA</h1>
-      </div>
-      <div>
-        <img class="img1" src="images/bicycle.jpg">
-      </div>
+<div class="container-fluid">
 
 
-      <div class="page1">
-        <p>Artikujt e fundit</p>
-        <div>
-          <h1>BUTAFORIA E RINISË<br> SË PËRPARIMIT DHE<br> AMERIKANET!</h1>
-        </div>
-        <br>
-        <div>
-          <p style="font-size:20px;">Si cdo gjë në këtë vend,që të ftillohen njerëzit,<br>duhet që një fenomen të saturohet deri në atë pikë sa<br>të të vijë për të vjellë ose duhet të...</p>
-        </div>
-        <div><a href="" style="font-size:26px; color:black;"><b>lexo me shume</b></a>
-        </div>
-        <div>
-          <br><br><br><br><br>
-        </div>
-        <div>
-          <img src="images/shteti.jpg" alt="">
-        </div>
-
-
-      </div>
-
-
-
-      <div class="page2">
-        <div>
-          <p class="date1" style="float:right;"><b>06/16</b></p>
-        </div>
-        <div>
-          <img class="img2" src="images/convo.jpg">
-        </div>
-
-        <div>
-          <h1 style="font-size:44px; float:right;width:540px;">MINISTRI I QILARIT</h1>
-        </div>
-        <div>
-          <p class="par2" style="font-size:20px;">Nje vend eshte mire nese ekonomia e tij eshte mire.Per tu<br>shpjeguar studenteve teorine e hierarkise se nevojave sipas Maslow<br>perdor shpesh nje shprehje e cila pa shume shkence e sintetizon<br> gjenialitetin e atij zoterise."Nuk behet filozofi
-            me barkun bosh!"-<br>kjo eshte ajo fjali qe un e mendoj se e shpjegon me mire...</p>
-        </div>
-        <div>
-          <p><a href="" style="font-size:22px; color:black;"><b>lexo me shume...</b></a></p>
-        </div>
-        <div>
-          <br> <br>
-        </div>
-        <div>
-          <img src="images/kali.jpg" alt="">
-        </div>
-      </div>
-      <div class="pag21">
-        <div>
-          <img src="images/cader.jpg" alt="signup"></div>
-
-        <div>
-          <button class="btn1"><b>Sign up</b></button>
-          <h1 class="sign">SIGN UP FOR NEWSLETTER</h1>
-        </div>
-
-
-        <br> <br> <br>
-      </div>
-      <div class="page3">
-        <div>
-          <h3>PËRROI PSIQIK</h3>
-        </div>
-        <div>
-          <img src="images/butak.jpg" alt="Butak">
-        </div>
-        <div>
-          <h3>BUTAKËT</h3>
-        </div>
-      </div>
-      <div class="page4">
-        <div>
-          <h3 style="float:right;">DIXHITURA TË ZGJEDHURA</h3>
-        </div>
-        <div>
-          <img src="images/kolonja.jpg" alt="">
-        </div>
-        <div>
-          <p>Kolonja ka lezet,edhe mbjelljen e ben me estetike.</p>
-        </div>
-      </div>
-      <div class="page5">
-        <ul class="lista1">
-          <li>Analize</li>
-          <li>Politike</li>
-          <li>Ekonomi</li>
-          <li>Perroi Psiqik</li>
-          <li>Sociale</li>
-          <li>Inovacion</li>
-          <li>Teknologji</li>
-        </ul>
-      </div>
-
-      <div class="page6">
-        <div>
-          <img src="images/dollar.jpg" alt="Dollar">
-        </div>
-        <div>
-          <br><br></div>
-        <div>
-          <h1>BUTAFORIA E RINISE<br>SE PERPARIMIT DHE<br>AMERIKANET!</h1>
-        </div>
-        <div>
-          <br>
-          <div>
-            <p style="font-size:20px;">Si cdo gjë në këtë vend,që të ftillohen njerëzit,<br>duhet që një fenomen të saturohet deri në atë pikë sa<br>të të vijë për të vjellë ose duhet të...</p>
-          </div>
-          <div><a href="" style="font-size:26px; color:black;"><b>lexo me shume</b></a>
-          </div>
-        </div>
-        <div>
-          <img src="images/dollar.jpg" alt="" style="padding-top:200px;">
-        </div>
-      </div>
-
-
-
-      <div class="page7">
-        <div>
-          <h1>ZGJIDHJA E DIFERENCES<br>SE MADHE</h1>
-          <br><br><br>
-        </div>
-        <div>
-          <p style="font-size:18px;">Para se ti futesha profesionit te ekonomistit,shume vite me i ri,ne moshe<br>kur ti quhesh i 'vogel' akoma,kisha nje problem me idene e te flaurit.Ketu<br>nuk e kam per nje bluze,buke apo sheqer,e kam fjalen te falurit e parase.<br>Nuk e kuptoja mekanizmin ekonomik qe ishte mbas atij procesi,por idene e te flaurit para nuk e gelltisja dot<br><br>Qe ta mbyll me pjesen e patetizmit,kur isha i vogel kisha si nje gjysem<br>endrre,nje si mision.Vixioni im nese behesha 'shume' i<br>pasur ishte jo te dhuroja para ose gjera,por te ndertoja shkolla,kopshte,<br>e tu jepja njerezve nje mundesi.</p>
-        </div>
-        <a href="" style="font-size:20px;"><b>lexo me shume...</b></a>
-        <div>
-          <img src="images/convo.jpg" alt="" style="padding-top:240px;">
-          <br><br><br><br><br>
-        </div>
-        <div>
-          <div>
-            <h1 style="">ZGJIDHJA E DIFERENCES<br>SE MADHE</h1>
-            <br><br>
-          </div>
-          <div>
-            <p style="font-size:18px;">Para se ti futesha profesionit te ekonomistit,shume vite me i ri,ne moshe<br>kur ti quhesh i 'vogel' akoma,kisha nje problem me idene e te flaurit.Ketu<br>nuk e kam per nje bluze,buke apo sheqer,e kam fjalen te falurit e parase.<br>Nuk e kuptoja mekanizmin ekonomik qe ishte mbas atij procesi,por idene e te flaurit para nuk e gelltisja dot<br><br><br>Qe ta mbyll me pjesen e patetizmit,kur isha i vogel kisha si nje gjysem<br>endrre,nje si mision.Vixioni im nese behesha 'shume' i<br>pasur ishte jo te dhuroja para ose gjera,por te ndertoja shkolla,kopshte,<br>e tu jepja njerezve nje mundesi.</p>
-          </div>
-          <a href=""><b>lexo me shume...</b></a>
-        </div>
+    <div class="navbar">
+      <a class="active" href="#"><i class="fa fa-fw fa-home"></i>Faqja Kryesore</a>
+      <a href="#"><i class="fa fa-fw fa-search"></i> Artikuj</a>
+      <a href="#"><i class="fa fa-fw fa-envelope"></i> Kontakt</a>
+      <a href="#"><i class="fa fa-fw fa-user"></i> Rreth nesh</a>
     </div>
-      <div class="page8">
-        <div>
-<ul class="last" style="float:left;margin:150px 150px;">
-  <li><a href=""><b>RRETH TRILEMA</b></a></li><b>-</b>
-  <li><a href=""><b>UNIVERSITETI</b></a></li><b>-</b>
-  <li><a href=""><b>PERROI PSIQIK</b></a></li><b>-</b>
-  <li><a href=""><b>KONTAKTO</b></a></li>
-</ul>
-<br><br><br><br></div>
-<p class="last1" >Ketu do te jete pika e takimit e asaj kategorie intelektualesh te cilet mendojne dhe besojne se nepermjet ballafaqimit te ideve,opinioneve dhe anali<br>zave mund te perftohet nje sinteze qe do te sherbeje si themelel mbi te cilin do te mbeshtetet nje filozofi e re drejtuese.</p>
+    <img src="images/bicycle.jpg" class="img-responsive img-rounded" alt="">
+    <div class="col-md-8">
+    <h2><strong>BUTAFORIA E RINISE SE PERPARIMIT DHE AMERIKANET</strong></h2>
+    <p style="font-size:30px;">Si cdo gjë në këtë vend,që të ftillohen njerëzit,
+duhet që një fenomen të saturohet deri në atë pikë sa
+të të vijë për të vjellë ose duhet të...</p>
+<a href="#" style="font-size:30px;">lexo me shume</a>
+    </div>
+<br>
+    <div class="col-md-4">
+  <img style="width:100%;" src="images/convo.jpg" class="img-responsive img-rounded" alt="">
+    </div>
+    <div class="col-md-6">
+      <img src="images/shteti.jpg" class="img-responsive img-rounded" alt="">
+    </div>
+    <div class="col-md-6">
+    <h1 style="font-size:44px; color:black;">MINISTRI I QILARIT</h1>
+    <p  style="font-size:20px;color:black;">Nje vend eshte mire nese ekonomia e tij eshte mire.Per tu
+shpjeguar studenteve teorine e hierarkise se nevojave sipas Maslow
+perdor shpesh nje shprehje e cila pa shume shkence e sintetizon
+gjenialitetin e atij zoterise."Nuk behet filozofi me barkun bosh!"-
+kjo eshte ajo fjali qe un e mendoj se e shpjegon me mire...</p>
+<a href="#" style="font-size:22px; color:black;"><b>lexo me shume...</b></a>
+  <img src="images/kali.jpg" alt="" class="img-responsive">
+    </div>
+
+    <div class="col-md-12">
+      <img style="width:100%;" src="images/news.jpg " class="img-responsive" alt="">
+      <button class="btn btn-success" name="button">Sign Up</button>
 
       </div>
-      <div class="social">
-        <a href="#" >
-              <i class="fa fa-facebook icons white " style="background: #3B5998;
-  color: white;;"></i></a>
-              <a href="" target="_blank">
-      <i class="fa fa-twitter icons" style="background: #55ACEE;
-  color: white;"></i></a>
-  <a href="" target="_blank">
-<i class="fa fa-youtube icons" style="background:red;
-color: white;"></i></a>
-<a href="" target="_blank">
-<i class="fa fa-dribbble icons" style="background: #ea4c89;
-  color: white;"></i></a>
-<a href="" target="_blank">
-<i class="fa fa-instagram icons" style=" background: #125688;
-  color: white;"></i></a>
-
+      <div class="col-md-6">
+        <h3 style="color:black;">PERROI PSIQIK</h3>
+        <img src="images/butak.jpg" style="width:100%;" class="img-responsive" alt="">
+        <h4 style="color:black padding-top:5px;">BUTAKET</h4>
       </div>
-    </header>
+      <div class="col-md-6">
+          <h3 style="color:black;">DIXHITURA TE ZGJEDHURA</h3>
+          <img src="images/kolonja.jpg" style="width:100%;" alt="">
+          <p style="color:black;"><strong>Kolonja ka lezet,edhe mbjelljen e ben me estetike.</strong></p>
+      </div>
+      <div class="col-md-8">
+        <img src="images/dollar.jpg" style="width:80%;" class="img-responsive" alt="">
+      </div>
+      <div class="col-md-4">
+      <h1 style="font-size:44px; text-align:left; color:black; width:90%;">ZGJIDHJA E DIFERENCES SE MADHE</h1>
+      <br><br>
+      <p style="font-size:20px;color:black;">Para se ti futesha profesionit te ekonomistit,shume vite me i ri,ne moshe
+kur ti quhesh i 'vogel' akoma,kisha nje problem me idene e te flaurit.Ketu
+nuk e kam per nje bluze,buke apo sheqer,e kam fjalen te falurit e parase.
+Nuk e kuptoja mekanizmin ekonomik qe ishte mbas atij procesi,por idene e te falurit para nuk e gelltisja dot
+
+Qe ta mbyll me pjesen e patetizmit,kur isha i vogel kisha si nje gjysem
+endrre,nje si mision.Vixioni im nese behesha 'shume' i
+pasur ishte jo te dhuroja para ose gjera,por te ndertoja shkolla,kopshte,
+e tu jepja njerezve nje mundesi.</p>
+<a href="#" style="font-size:25px; color:black">lexo me shume...</a>
+          </div>
+          <div class="col-md-12">
+<p style="text-align:center; padding:10px 0 0 10px;">Ketu do te jete pika e takimit e asaj kategorie intelektualesh te cilet mendojne dhe besojne se nepermjet ballafaqimit te ideve,opinioneve dhe anali
+zave mund te perftohet nje sinteze qe do te sherbeje si themelel mbi te cilin do te mbeshtetet nje filozofi e re drejtuese.</p>
+                <div class="navbar" style="text-align:center;">
+                  <a  href="#"><i class="fa fa-fw fa-facebook"></i></a>
+                  <a href="#"><i class="fa fa-fw fa-twitter"></i> </a>
+                  <a href="#"><i class="fa fa-fw fa-youtube"></i></a>
+                  <a href="#"><i class="fa fa-fw fa-instagram"></i></a>
+                  <a href="#"><i class="fa fa-fw fa-dribbble"></i></a>
+                </div>
+
+          </div>
+  </div>
   </body>
-</div>
-
 </html>
