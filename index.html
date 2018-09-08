@@ -1,42 +1,88 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<style media="screen">
-</style>
   <head>
+    <meta name="viewport" content="width=device-width initial-scale=1.0" >
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="js/bootstrap.js"></script>
+
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
-<script src="../../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <title>My navigation page</title>
+    <title>Navigation Page</title>
   </head>
-<body>
-  <h1 class="hed">Welcome to my navigation page</h1>
-  <div class="container">
-<div class="page">
-
-  <div class="button">
-    <div class="btn">
-  <a href="ottergram/index.html" target="_blank" class="btn btn1"><span>Ottergram</span></a></div>
-  <div class="btn">
-    <a href="Browse/index.html" target="_blank" class="btn btn2"><span>MyWeb</span></a></div>
-    <div class="btn">
-     <a href="Trilema/index.html" target="_blank" class="btn btn3"><span>NewsFeed</span></a></div>
-     <div class="btn">
-        <a href="cv/index.html" target="_blank" class="btn btn3"><span>Curriculum Vitae</span></a></div>
-
-
+  <style>
+  h1{
+    text-align:center;
+    color:white;
+    background-color: #009933;
+    width: 100%;
+  }
+  h3{
+padding: 20px;
+  }
+  .thumbnail:hover {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 100%;
+    cursor: pointer;
+    padding: 10px;
+}
+a{
+  text-align: center;
+  color: #009933;
+}
+  </style>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Navigation Page</h1>
   </div>
-  <footer>
-    <p class="kl" style="font-size:30px">Klajdi Avdiaj</p>
-  </footer>
+    <h3>Here you can browse a list of my projects</h3>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <a href="https://klajdiavdiaj.github.io/cv/index.html" target="_blank">
+            <img src="cv.jpeg" class="img-thumbnail" alt="cv" style="width:100%;">
+            <div class="caption">
+              <p>Curriculum Vitae</p>
+            </div>
+          </a>
+          <p>Here you can find some information about me,including my education and skills</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <a href="https://klajdiavdiaj.github.io/ottergram/index.html" target="_blank">
+            <img src="otters.jpg" alt="otters" class="img-thumbnail" style="width:100%;">
+            <div class="caption">
+              <p>Ottergram</p>
+            </div>
+          </a>
+            <p>Photo Gallery of Otters</p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="thumbnail">
+          <a href="https://klajdiavdiaj.github.io/Browse/index.html" target="_blank">
+            <img src="beat.jpg" class="img-thumbnail" alt="Nature" style="width:120%;">
+            <div class="caption">
+              <p>MyWeb</p>
+            </div>
+          </a>
+          <p>Mainly entertainment</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <a href="https://klajdiavdiaj.github.io/Trilema/index.html" target="_blank">
+            <img src="tril.jpg" alt="Fjords" style="width:100%">
+            <div class="caption">
+              <p>Trilema</p>
+            </div>
+          </a>
+          <p>A basic newspaper still building</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-</div>
-
- </div>
   </body>
 </html>
