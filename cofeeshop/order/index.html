@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0" >
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/bootstrap.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP|Open+Sans" rel="stylesheet">
+    <meta charset="utf-8">
+     <script src="jquery.min.js"></script>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP|Open+Sans" rel="stylesheet">
+    <title>Order</title>
+  </head>
+  <style media="screen">
+    .fa{
+      padding:3px;
+      color: #e65c00;
+    }
+  }
+  .thumbnail:hover{
+    transition: 0.3s;
+    cursor: pointer;
+    padding: 2px;
+  }
+  .sidebar {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+  }
+
+  .sidebar a {
+      padding: 5px 5px 5px 2px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+  }
+
+  .sidebar a:hover {
+      color: #f1f1f1;
+  }
+
+  .sidebar .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+  }
+
+  .openbtn {
+      font-size: 20px;
+      cursor: pointer;
+      background-color: #111;
+      color: white;
+      padding: 10px 5px;
+      border: none;
+  }
+
+  .openbtn:hover {
+      background-color: #444;
+  }
+
+  #main {
+      transition: margin-left .5s;
+      padding: 5px;
+  }
+
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+      .sidebar {padding-top: 4px;}
+      .sidebar a {font-size: 5px;}
+
+  }
+  </style>
+  <body>
+
+<div class="container-fluid">
+  <div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="order/index.html" class="active">Order</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+    <a href="#">Gallery</a>
+</div>
+
+<div id="main">
+<button class="openbtn" onclick="openNav()" style="color:#990000; background-color:white; font-size:30px;font-family: 'Lobster', cursive;"><i class="fa fa-coffee" aria-hidden="true"></i>CoffeeDay</button>
+<h1 style="text-align:center; padding-bottom:10px;">Place Order</h1>
+  <div class="col-md-6">
+    <div class="thumbnail">
+<img src="img/cof.jpg" alt="beans">
+</div>
+</div>
+
+
+<div class="col-md-6" style="background-color:#ffffcc">
+  <div class="thumbnail">
+<form>
+    <div class="form-group">
+    <i class="fa fa-user icon"></i>
+      <label for="usr">Name:</label>
+      <input type="text" class="form-control" id="usr">
+    </div>
+    <div class="form-group">
+      <i class="fa fa-envelope icon"></i>
+      <label for="usr">E-mail</label>
+      <input type="text" class="form-control" id="em">
+    </div>
+    <div class="form-group">
+       <i class="fa fa-key icon"></i>
+      <label for="pwd" placeholer="E-mail">Password:</label>
+      <input type="password" class="form-control" id="pwd">
+    </div>
+    </form>
+  </div>
+  <div class="thumbnail">
+  <form>
+   <div class="checkbox">
+     <label><input type="checkbox" value="">Caffeine</label>
+   </div>
+   <div class="checkbox">
+     <label><input type="checkbox" value="">Milk</label>
+   </div>
+   <div class="checkbox">
+     <label><input type="checkbox" value="">Sugar</label>
+   </div>
+    </form>
+ </div>
+  <button type="button" name="button">Submit</button>
+
+  </div>
+  </div>
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "120px";
+  document.getElementById("main").style.marginLeft = "120px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+  </body>
+</html>
