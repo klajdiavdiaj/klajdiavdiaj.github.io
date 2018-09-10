@@ -122,18 +122,18 @@
 <form>
     <div class="form-group">
     <i class="fa fa-user icon"></i>
-      <label for="usr">Name:</label>
-      <input type="text" class="form-control" id="usr">
+      <label for="usr">First Name:</label>
+      <input type="text" class="form-control" id="fname">
     </div>
     <div class="form-group">
       <i class="fa fa-envelope icon"></i>
-      <label for="usr">E-mail</label>
-      <input type="text" class="form-control" id="em">
+      <label for="usr">Last Name</label>
+      <input type="text" class="form-control" id="lname">
     </div>
     <div class="form-group">
        <i class="fa fa-key icon"></i>
-      <label for="pwd" placeholer="E-mail">Password:</label>
-      <input type="password" class="form-control" id="pwd">
+      <label for="pwd" placeholer="Write order here...">Order:</label>
+      <input type="text" class="form-control" id="order">
     </div>
     </form>
   </div>
@@ -151,7 +151,21 @@
     </form>
  </div>
   <button type="button" name="button">Submit</button>
+  <div class="thumbnail">
+    <button onclick="add()">Add</button>
+     <button onclick="del()">Delete</button>
+     <button onclick="editor()">Edit</button>
+    <div class="table-responsive">
+  <table class="table" id="table">
+      <tr>
 
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Order</th>
+      </tr>
+    </table>
+  </div>
+  </div>
   </div>
   </div>
 </div>
@@ -165,6 +179,48 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidebar").style.width = "0";
   document.getElementById("main").style.marginLeft= "0";
+}
+var rIndex,
+table = document.getElementById("table");
+ function add(){
+
+ var newRow = table.insertRow(table.length);
+ cell1=newRow.insertCell(0);
+ cell2=newRow.insertCell(1);
+ cell3=newRow.insertCell(2);
+ fname=document.getElementById("fname").value;
+ lname=document.getElementById("lname").value;
+ order=document.getElementById("order").value;
+cell1.innerHTML=fname;
+cell2.innerHTML=lname;
+cell3.innerHTML=order;
+select();
+
+}
+function del(){
+document.getElementById("table").deleteRow(1);
+}
+function select(){
+for( var i=0;i<table.rows.length;i++){
+table.rows[i].onclick=function(){
+  rIndex = this.rowIndex;
+  console.log(rIndex);
+document.getElementById("fname").value=this.cells[0].innerHTML;
+document.getElementById("lname").value=this.cells[1].innerHTML;
+document.getElementById("order").value=this.cells[2].innerHTML;
+};
+}
+}
+function editor(){
+fname=document.getElementById("fname").value,
+lname=document.getElementById("lname").value,
+order=document.getElementById("order").value;
+table.rows[rIndex].cells[0].innerHTML=fname;
+table.rows[rIndex].cells[1].innerHTML=lname;
+table.rows[rIndex].cells[2].innerHTML=order;
+}
+function reset(){
+ table.innerHTML = "";
 }
 </script>
   </body>
