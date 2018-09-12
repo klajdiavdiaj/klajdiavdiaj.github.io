@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Menu</title>
+    <meta name="viewport" content="width=device-width initial-scale=1.0" >
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/bootstrap.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP|Open+Sans" rel="stylesheet">
+    <meta charset="utf-8">
+     <script src="jquery.min.js"></script>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP|Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  </head>
+  <style media="screen">
+  body{
+    background-color: #fff2e6;
+  }
+  .sidebar {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+  }
+
+  .sidebar a {
+      padding: 5px 5px 5px 2px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+  }
+
+  .sidebar a:hover {
+      color: #f1f1f1;
+  }
+
+  .sidebar .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+  }
+
+  .openbtn {
+      font-size: 20px;
+      cursor: pointer;
+      background-color: #111;
+      color: white;
+      padding: 10px 5px;
+      border: none;
+  }
+
+  .openbtn:hover {
+      background-color: #444;
+  }
+
+  #main {
+      transition: margin-left .5s;
+      padding: 5px;
+  }
+ul{
+  list-style-type: none;
+  font-size: 20px;
+  font-style: oblique;
+}
+.card{
+  padding: 10px 0 5px 0;
+box-shadow: 0 4px 8px 0 rgba(0, 5, 10, 0.2);
+}
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+.cake{
+  color:black;
+}
+.cold{
+color:#000033;
+}
+.hot{
+color: #800000
+}
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+      .sidebar {padding-top: 4px;}
+      .sidebar a {font-size: 5px;}
+
+  }
+  </style>
+  <body>
+    <div class="container-fluid">
+      <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="https://klajdiavdiaj.github.io/cofeeshop/index.html">Home</a>
+        <a href="https://klajdiavdiaj.github.io/cofeeshop/order/index.html">Order</a>
+      <a href="https://klajdiavdiaj.github.io/cofeeshop/recipes/index.html">Recipes</a>
+      <a href="#">Contact</a>
+        <a href="https://klajdiavdiaj.github.io/cofeeshop/gallery/index.html">Gallery</a>
+    </div>
+
+    <div id="main">
+    <button class="openbtn" onclick="openNav()" style="color:#990000; background-color:#ffe0cc; font-size:30px;font-family: 'Lobster', cursive;"><i class="fa fa-coffee" aria-hidden="true"></i>CoffeeDay</button>
+    <h1 style="text-align:center; padding-bottom:10px; color:#990000;">Browse over our delicuous products</h1>
+<div class="thumbnail">
+
+    <img src="photo/recipe.jpg" alt="menu" class="img-responsive">
+  </div>
+
+  <div class="col-md-4">
+    <div class="card">
+      <img src="photo/hotc.jpg" alt="hotcoffee" class="img-thumbnail">
+    <h2>HOT</h2>
+    <ul class="hot">
+      <li>POUR-OVER</li>
+      <li>COFFEE of the DAY</li>
+      <li>COFFEE AU LAIT</li>
+      <li>CAPPUCCINO or LATTE</li>
+    </ul>
+    <p style="text-align:center;color:grey;">Average price 13$</p>
+    <button type="button" onclick="location.href = 'https://klajdiavdiaj.github.io/cofeeshop/order/index.html';" >Add to card</button>
+  </div>
+</div>
+
+<div class="col-md-4">
+  <div class="card">
+    <img src="photo/cream.png" alt="cold" class="img-thumbnail">
+  <h2>COLD</h2>
+  <ul class="cold">
+    <li>MilkShake</li>
+    <li>ICE CREAM</li>
+    <li>COLD BREW</li>
+    <li>URDU</li>
+  </ul>
+  <p style="text-align:center;color:grey;">Average price 18$</p>
+  <button type="button" onclick="location.href = 'https://klajdiavdiaj.github.io/cofeeshop/order/index.html';" >Add to card</button>
+</div>
+</div>
+<div class="col-md-4">
+  <div class="card">
+    <img src="photo/cake.jpg" alt="hotcoffee" class="img-thumbnail">
+  <h2>DESERT</h2>
+  <ul class="cake">
+    <li>CAKE</li>
+    <li>TEXAS TRASH DIP</li>
+    <li>PIZZA POT PIE</li>
+    <li>BUTTERBEER PIE</li>
+  </ul>
+  <p style="text-align:center;color:grey;">Average price 22$</p>
+  <button type="button" onclick="location.href = 'https://klajdiavdiaj.github.io/cofeeshop/order/index.html';" >Add to card</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "120px";
+  document.getElementById("main").style.marginLeft = "120px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+  </body>
+</html>
