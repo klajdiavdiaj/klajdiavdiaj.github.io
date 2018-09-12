@@ -132,36 +132,43 @@
     </div>
     <div class="form-group">
        <i class="fa fa-key icon"></i>
-      <label for="pwd" placeholer="Write order here...">Order:</label>
-      <input type="text" class="form-control" id="order">
+      <label for="pwd" placeholer="e-mail">E-mail:</label>
+      <input type="text" class="form-control" id="email">
+        <button type="button" name="button" class="btn btn-primary" onclick="my()" style="margin-top:10px;">Submit</button>
     </div>
     </form>
   </div>
-  <div class="thumbnail">
-  <form>
-   <div class="checkbox">
-     <label><input type="checkbox" value="">Caffeine</label>
-   </div>
-   <div class="checkbox">
-     <label><input type="checkbox" value="">Milk</label>
-   </div>
-   <div class="checkbox">
-     <label><input type="checkbox" value="">Sugar</label>
-   </div>
-    </form>
- </div>
-  <button type="button" name="button">Submit</button>
-  <div class="thumbnail">
-    <button onclick="add()">Add</button>
-     <button onclick="del()">Delete</button>
-     <button onclick="editor()">Edit</button>
-    <div class="table-responsive">
+  <div class="thumbnail" style="display:none;" id="thumbnail">
+     <button type="button" onclick="add()" class="btn btn-success" id="btn1" style="margin-right:20px;">Add</button>
+     <button onclick="del()" class="btn btn-danger">Delete</button>
+     <h1>Make your order</h1>
+      <form>
+       <select id="cofe" autofocus>
+         <option value="expresso">Espresso</option>
+         <option value="machiatto">Machiatto</option>
+         <option value="milkshake">Milkshake</option>
+         <option value="americano">Americano</option>
+         <option value="capuccino">Cappucino</option>
+         <option value="black">Long Black</option>
+       </select>
+       <br><br>
+     </form>
+     <div class="rng">
+     <h4>Caffeine Level</h4>
+      <input type="range" class="form-control-range" id="cafeine"  value="20">
+      <h4>Sugar Level</h4>
+       <input type="range" id="sugar"  value="30">
+       <br><br>
+       </div>
+
+     <br><br>
+    <div class="table-hover">
   <table class="table" id="table">
       <tr>
-
-        <th>Firstname</th>
-        <th>Lastname</th>
-        <th>Order</th>
+        <th>Product</th>
+        <th>Caffeine</th>
+        <th>Sugar</th>
+        <th>Cost</th>
       </tr>
     </table>
   </div>
@@ -183,45 +190,39 @@ function closeNav() {
 var rIndex,
 table = document.getElementById("table");
  function add(){
-
- var newRow = table.insertRow(table.length);
- cell1=newRow.insertCell(0);
+ var newRow = table.insertRow(table.length),
+ cell1=newRow.insertCell(0),
  cell2=newRow.insertCell(1);
  cell3=newRow.insertCell(2);
- fname=document.getElementById("fname").value;
- lname=document.getElementById("lname").value;
- order=document.getElementById("order").value;
-cell1.innerHTML=fname;
-cell2.innerHTML=lname;
-cell3.innerHTML=order;
-select();
-
+ cell4=newRow.insertCell(3);
+ var c=document.getElementById("cofe");
+cell1.innerHTML=c.options[c.selectedIndex].text;
+cell2.innerHTML=document.getElementById("cafeine").value+"%";
+cell3.innerHTML=document.getElementById("sugar").value+"%";
+cell4.innerHTML=parseInt(cell2.innerHTML)*0.01 +parseInt(cell3.innerHTML)*0.05+"$";
 }
 function del(){
 document.getElementById("table").deleteRow(1);
 }
-function select(){
-for( var i=0;i<table.rows.length;i++){
-table.rows[i].onclick=function(){
-  rIndex = this.rowIndex;
-  console.log(rIndex);
-document.getElementById("fname").value=this.cells[0].innerHTML;
-document.getElementById("lname").value=this.cells[1].innerHTML;
-document.getElementById("order").value=this.cells[2].innerHTML;
-};
+
+
+function valid(){
+var s=document.getElementById("thumbnail");
+if(s.style.display==="none"){
+s.style.display="block";
+document.getElementById("btn").innerHTML="Hide Orders";
+
+}
+else{
+s.style.display="none";
+ document.getElementById("btn").innerHTML="Show Orders";
 }
 }
-function editor(){
-fname=document.getElementById("fname").value,
-lname=document.getElementById("lname").value,
-order=document.getElementById("order").value;
-table.rows[rIndex].cells[0].innerHTML=fname;
-table.rows[rIndex].cells[1].innerHTML=lname;
-table.rows[rIndex].cells[2].innerHTML=order;
+function my(){
+  alert("Succesfully logged in")
+  valid();
 }
-function reset(){
- table.innerHTML = "";
-}
+
 </script>
   </body>
 </html>
