@@ -134,7 +134,8 @@
        <i class="fa fa-key icon"></i>
       <label for="pwd" placeholer="e-mail">E-mail:</label>
       <input type="text" class="form-control" id="email">
-        <button type="button" name="button" class="btn btn-primary" onclick="my()" style="margin-top:10px;">Submit</button>
+        <button type="button" name="button" class="btn btn-primary" onclick="my()" style="margin-top:10px;">Log in</button>
+        <button onclick="hide()" class="btn btn-warning" style="margin-top:10px;">Log Out</button>
     </div>
     </form>
   </div>
@@ -210,18 +211,23 @@ function valid(){
 var s=document.getElementById("thumbnail");
 if(s.style.display==="none"){
 s.style.display="block";
-document.getElementById("btn").innerHTML="Hide Orders";
-
-}
-else{
-s.style.display="none";
- document.getElementById("btn").innerHTML="Show Orders";
 }
 }
 function my(){
   alert("Succesfully logged in")
   valid();
 }
+function hide(){
+  var h=document.getElementById("thumbnail");
+  if(h.style.display==="block"){
+  h.style.display="none";
+  alert("Succesfully logged out")
+}
+  else {
+    alert("Log in first")
+  }
+}
+
 
 </script>
   </body>
