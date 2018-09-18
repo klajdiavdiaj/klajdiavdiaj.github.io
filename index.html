@@ -1,147 +1,107 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta name="viewport" content="width=device-width initial-scale=1.0" >
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <script src="js/bootstrap.js"></script>
-<link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP|Open+Sans" rel="stylesheet">
-    <meta charset="utf-8">
-    <title>Navigation Page</title>
-  </head>
-  <style>
-{
-    color: #fff;
-    text-align: center;
-    animation: glow 1s ease-in-out infinite alternate;
-     background-color: black;
-     padding: 10px;
-     font-family: 'Open Sans', sans-serif;
-font-family: 'Noto Serif JP', sans-serif;
-  }
-  h3{
-padding: 20px;
-font-family: 'Open Sans', sans-serif;
-font-family: 'Noto Serif JP', sans-serif;
-  }
-  p{
-    font-family: 'Open Sans', sans-serif;
-font-family: 'Noto Serif JP', sans-serif;
-  }
-  .thumbnail:hover {
-    box-shadow: 0 4px 2px 0 rgba(0,0,0,0.2);
+<html>
+<head>
+  <title>Projects</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.css">
+<script src="js/bootstrap.js"></script>
+</head>
+<style>
+.card {
+    box-shadow: 0 4px 8px 5px rgba(0,0,0,0.2);
     transition: 0.3s;
-    width: 100%;
-    cursor: pointer;
-    padding: 2px;
+    width: 40%;
+    float:left;
+    margin:10px 50px 10px 20px;
+    border-radius: 10px;
+}
+.container{
+  padding-left: 20px;
+}
+.card:hover {
+    box-shadow: 0 20px 16px 10px rgba(0,0,0,0.2);
+}
+
+.container1 {
+    padding: 2px 16px;
+}
+img{
+  border-radius: 10px;
 }
 a{
-  text-align: center;
-  color: #009933;
+  text-decoration: none;
+  color: black;
 }
-h1{
-  width: auto;
-  color: #fff;
-  text-align: center;
-  animation: glow 1s ease-in-out infinite alternate;
-   background-color: black;
-   padding: 10px;
+a:hover{
+  text-decoration: none;
 }
-.footer {
-  width: auto;
-  color: #fff;
-  text-align: center;
-  animation: glow 1s ease-in-out infinite alternate;
-   background-color: black;
-   padding: 10px;
+@media  screen and (max-width:600px){
+.card{width:80%;}
+.container{display:block;}
 }
-@-webkit-keyframes glow {
-  from {
-     text-shadow: 0 0 10px, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-  }
-  to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-  }
-}
-  </style>
-  <body>
-    <div class="container">
-      <div class="header">
-        <h1>Navigation Page</h1>
-  </div>
+</style>
 
-    <h3>Here you can browse a list of my projects</h3>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="thumbnail">
-          <a href="https://klajdiavdiaj.github.io/cv/index.html" target="_blank">
-            <img src="img1/cv.jpeg"  alt="cv" class="img-thumbnail" style="width:90%;">
-            <div class="caption">
-              <p>Curriculum Vitae</p>
-            </div>
-          </a>
-          <p>Here you can find some information about me,including my education and skills</p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="thumbnail">
-          <a href="https://klajdiavdiaj.github.io/ottergram/index.html" target="_blank">
-            <img src="img1/otters.jpg" alt="otters" class="img-thumbnail" style="width:90%;">
-            <div class="caption">
-              <p>Ottergram</p>
-            </div>
-          </a>
-            <p>Photo Gallery of Otters</p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="thumbnail">
-          <a href="https://klajdiavdiaj.github.io/Browse/index.html" target="_blank">
-            <img src="img1/beat.jpg" class="img-thumbnail" alt="beats" style="width:90%;">
-            <div class="caption">
-              <p>MyWeb</p>
-            </div>
-          </a>
-          <p>Mainly entertainment</p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="thumbnail">
-          <a href="https://klajdiavdiaj.github.io/Trilema/index.html" target="_blank">
-            <img src="img1/trilema.jpg" alt="trilema" style="width:90%">
-            <div class="caption">
-              <p>Trilema</p>
-            </div>
-          </a>
-          <p>A basic newspaper still building</p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="thumbnail">
-          <a href="https://klajdiavdiaj.github.io/cofeeshop/index.html" target="_blank">
-            <img src="cofeeshop/order/img/cof.jpg" class="img-thumbnail" alt="coffee" style="width:90%;">
-            <div class="caption">
-              <p>CoffeeShop</p>
-            </div>
-          </a>
-          <p>Caffeine to start the day</p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="thumbnail">
-          <a href="https://klajdiavdiaj.github.io/gamers/index.html" target="_blank">
-            <img src="dgaming.jpg" class="img-thumbnail" alt="blog" style="width:90%;">
-            <div class="caption">
-              <p>For Gamers</p>
-            </div>
-          </a>
-          <p>Join the ultimate League</p>
-        </div>
-      </div>
-    </div>
-    <div class="footer">
-  <p>Klajdi Avdiaj</p>
-  </div>
-  </div>
+<body>
+<div class="container">
+<h1>Klajdi Avdiaj</h1>
+<h2>Browse over the projects</h2>
+ <div class="card">
+   <a href="https://klajdiavdiaj.github.io/cv/index.html">
+  <img src="img1/cv.jpeg" alt="Avatar" style="width:100%;">
+  <div class="container1">
+    <h4><b>Curriculum Vitae</b></h4>
+    <p>HTML CSS Javascript</p>
 
-  </body>
+  </div>
+  </a>
+</div>
+<div class="card">
+    <a href="https://klajdiavdiaj.github.io/<ottergram></ottergram>/index.html" target="_blank">
+  <img src="img1/otters.jpg" alt="Avatar" style="width:100%">
+  <div class="container1">
+    <h4><b>Ottergram</b></h4>
+    <p>Photo Gallery</p>
+  </div>
+</a>
+</div>
+<div class="card">
+  <a href="https://klajdiavdiaj.github.io/Trilema/index.html" target="_blank">
+  <img src="img1/trilema.jpg" alt="Avatar" style="width:100%;height:50%;">
+  <div class="container1">
+    <h4><b>Trilema</b></h4>
+    <p>Newsfeed styling website</p>
+  </div>
+</a>
+</div>
+<div class="card">
+    <a href="https://klajdiavdiaj.github.io/cofeeshop/index.html" target="_blank">
+  <img src="cofeeshop/order/img/cof.jpg" alt="Avatar" style="width:100%;height:50%;">
+  <div class="container1">
+    <h4><b>Coffeeshop</b></h4>
+    <p>Caffeine to start the day</p>
+  </div>
+</a>
+</div>
+<div class="card">
+    <a href="https://klajdiavdiaj.github.io/gamers/index.html" target="_blank">
+  <img src="dgaming.jpg" alt="Avatar" style="width:100%;height:50%;">
+  <div class="container1">
+    <h4><b>For Gamers</b></h4>
+    <p>Latest desktops and gaming laptops</p>
+  </div>
+</a>
+</div>
+<div class="card">
+      <a href="https://klajdiavdiaj.github.io/Browse/index.html" target="_blank">
+  <img src="img1/beat.jpg" alt="Avatar" style="width:100%;height:50%;">
+  <div class="container1">
+    <h4><b>MyWeb</b></h4>
+    <p>Find your entertainment</p>
+  </div>
+</a>
+</div>
+</div>
+</body>
+
+<!-- Mirrored from www.w3schools.com/howto/tryit.asp?filename=tryhow_css_cards by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 12 Sep 2018 19:52:35 GMT -->
 </html>
