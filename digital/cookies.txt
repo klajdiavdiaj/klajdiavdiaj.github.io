@@ -1,0 +1,4 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+.smartslider3.com	TRUE	/	FALSE	1999999999	__cfduid	dcafe69f995fec1ab865afead7d866d8b1540113080
+

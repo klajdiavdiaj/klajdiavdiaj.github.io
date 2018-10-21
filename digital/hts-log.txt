@@ -1,0 +1,23 @@
+HTTrack3.49-2+htsswf+htsjava launched on Sun, 21 Oct 2018 11:07:55 at http://localhost/klajdi/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" http://localhost/klajdi/ -O1 "C:\My Web Sites\digital" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+11:08:07	Warning: 	file not stored in cache due to bogus state (incomplete type with OK (200), size 0): localhost/klajdi/wp-content/plugins/wp-google-maps/wpgmza_data.js?ver=4.9.8
+11:11:40	Error: 	"Not Found" (404) at link localhost/klajdi/wp-content/themes/spicepress/css/owl.video.play.png (from localhost/klajdi/wp-content/themes/spicepress/css/owl.carousel.css?ver=4.9.8)
+11:11:40	Error: 	"Not Found" (404) at link localhost/klajdi/wp-content/themes/spicepress/images/testimonial-bg.jpg (from localhost/klajdi/wp-content/themes/spicepress/style.css?ver=4.9.8)
+11:11:40	Warning: 	Retry after error 500 (Internal Server Error) at link localhost/klajdi/wp-content/themes/images/callout-shadow.png (from localhost/klajdi/wp-content/themes/spicepress/style.css?ver=4.9.8)
+11:11:40	Warning: 	Moved Permanently for localhost/klajdi/?p=22
+11:11:40	Warning: 	File has moved from localhost/klajdi/?p=22 to http://localhost/klajdi/about/
+11:11:40	Warning: 	Moved Permanently for localhost/klajdi/?p=25
+11:11:40	Warning: 	File has moved from localhost/klajdi/?p=25 to http://localhost/klajdi/contact/
+11:11:44	Warning: 	Moved Permanently for localhost/klajdi/?p=26
+11:11:44	Warning: 	File has moved from localhost/klajdi/?p=26 to http://localhost/klajdi/portfolio/
+11:12:03	Warning: 	Retry after error 500 (Internal Server Error) at link localhost/klajdi/wp-content/themes/images/callout-shadow.png (from localhost/klajdi/wp-content/themes/spicepress/style.css?ver=4.9.8)
+11:12:04	Error: 	"Internal Server Error" (500) after 2 retries at link localhost/klajdi/wp-content/themes/images/callout-shadow.png (from localhost/klajdi/wp-content/themes/spicepress/style.css?ver=4.9.8)
+
+HTTrack Website Copier/3.49-2 mirror complete in 4 minutes 9 seconds : 122 links scanned, 113 files written (7588127 bytes overall) [7631174 bytes received at 30647 bytes/sec], 2.9 requests per connection
+(3 errors, 9 warnings, 0 messages)
