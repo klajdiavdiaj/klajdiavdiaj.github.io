@@ -62,7 +62,7 @@ for (int i = threshold; i <= needle.length(); i++)
                      .toArray(String[]::new); 
     int fin=str2.length;
     for(int j=0;j<fin;j++){
-         System.out.println("String "+str2[j]+" found at haystack offset "+haystack.indexOf(str2[j])+" needle offset "+needle.indexOf(str2[j]));  
+         System.out.println("sequence of length= "+str2[j].length()+" found at haystack offset "+haystack.indexOf(str2[j])+", needle offset "+needle.indexOf(str2[j]));  
     }
     
 }
